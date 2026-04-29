@@ -1,0 +1,61 @@
+
+/* Mode clair par défaut */
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Mode sombre */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+/* Liens en marron pour le mode clair */
+.text-brown {
+  color: black !important;
+}
+
+/* Liens en beige clair pour le mode sombre */
+body.dark-mode .text-brown {
+  color: white !important;
+}
+
+/* Navbar sombre */
+body.dark-mode .navbar {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.hero-section {
+  background: url('../src/assets/images/fond1.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  position: relative !important;
+}
+
+.hero-section::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.hero-section > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+@media (max-width: 576px) {
+  .display-3 {
+    font-size: 2rem !important;
+  }
+  
+  .lead {
+    font-size: 0.95rem !important;
+  }
+}

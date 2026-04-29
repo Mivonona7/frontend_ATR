@@ -28,7 +28,7 @@ export default function Footer() {
         
         <hr className="border-secondary" />
         <p className="text-center text-secondary small mb-0">
-          &copy; 2023 ATR. All rights reserved.
+          &copy; 2026 ATR. All rights reserved.
         </p>
       </div>
     </footer>
